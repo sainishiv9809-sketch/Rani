@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meri Maharani Ji ❤️</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    min-height:100vh;
+    overflow:hidden;
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    radial-gradient(circle at 10% 10%,#ffd7e5,transparent 30%),
+    radial-gradient(circle at 90% 90%,#ffc8db,transparent 30%),
+    linear-gradient(135deg,#fff8fa,#ffe6ef);
+}
+
+.card{
+    width:92%;
+    max-width:400px;
+    background:rgba(255,255,255,.9);
+    padding:30px 22px;
+    border-radius:28px;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(180,50,90,.18);
+}
+
+.logo{
+    width:78px;
+    height:78px;
+    margin:0 auto 16px;
+    border-radius:50%;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:43px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+h1{
+    color:#d6336c;
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.sub{
+    color:#777;
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.message{
+    background:#fff2f6;
+    padding:17px 14px;
+    border-radius:18px;
+    color:#555;
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.message b{
+    color:#d6336c;
+}
+
+.ask{
+    color:#444;
+    font-weight:bold;
+    margin-bottom:14px;
+}
+
+/* BUTTON AREA */
+
+.buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+    position:relative;
+    min-height:110px;
+}
+
+button{
+    border:0;
+    border-radius:30px;
+    padding:14px 28px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    touch-action:none;
+}
+
+#yes{
+    background:#d6336c;
+    color:white;
+    box-shadow:0 8px 20px rgba(214,51,108,.3);
+}
+
+/*
+   NO BUTTON STARTS EXACTLY
+   BELOW YES BUTTON
+*/
+
+#no{
+    background:#eee;
+    color:#555;
+    position:relative;
+    z-index:9999;
+}
+
+/* SUCCESS */
+
+.hidden{
+    display:none;
+}
+
+.success{
+    animation:pop .5s ease;
+}
+
+@keyframes pop{
+    from{
+        opacity:0;
+        transform:scale(.7);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.big{
+    font-size:65px;
+    animation:beat 1s infinite;
+}
+
+@keyframes beat{
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+.success h2{
+    color:#d6336c;
+    font-size:29px;
+    margin:12px 0;
+}
+
+.success p{
+    color:#555;
+    line-height:1.7;
+}
+
+.love{
+    margin-top:18px;
+    color:#d6336c;
+    font-weight:bold;
+}
+
+/* FLOATING HEARTS */
+
+.heart{
+    position:fixed;
+    bottom:-30px;
+    pointer-events:none;
+    animation:up 7s linear forwards;
+    opacity:.6;
+}
+
+@keyframes up{
+    0%{
+        transform:translateY(0) rotate(0);
+        opacity:0;
+    }
+    15%{
+        opacity:.6;
+    }
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<div class="card">
+
+    <!-- QUESTION -->
+
+    <div id="question">
+
+        <div class="logo">
+            🥺
+        </div>
+
+        <h1>
+            Meri Maharani Ji ❤️
+        </h1>
+
+        <div class="sub">
+            Itna gussa bhi achha nahi hota ji... 🥺
+            <br>
+            Aapki ek smile ke liye ye banda kuch bhi kar sakta hai ❤️
+        </div>
+
+        <div class="message">
+
+            <b>Ek chhoti si request hai... ❤️</b>
+
+            <br><br>
+
+            Gussa thoda sa side mein rakh do,
+            aur apne is pagal ko ek baar
+            maaf kar do. 🥹
+
+            <br><br>
+
+            Aap smile karti ho na,
+            toh duniya thodi aur beautiful
+            lagti hai. 🌸
+
+        </div>
+
+        <div class="ask">
+            Ab maan jao na Maharani Ji? 🥺👉👈
+        </div>
+
+
+        <!--
+            YAHAN NO BUTTON
+            YES KE JUST NICHE HAI
+        -->
+
+        <div class="buttons">
+
+            <button id="yes" type="button">
+                Haan ❤️
+            </button>
+
+            <button id="no" type="button">
+                Nahi 😤
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- SUCCESS -->
+
+    <div id="success" class="hidden">
+
+        <div class="big">
+            ❤️
+        </div>
+
+        <h2>
+            Yesss! 🥹
+        </h2>
+
+        <p>
+            Mujhe pata tha meri Maharani Ji
+            mujhe zyada der gussa nahi kar sakti. 🥰
+
+            <br><br>
+
+            Ab ek pyari si smile kar do... 😊
+
+            <br><br>
+
+            <b>
+                Aap bahut special ho ❤️
+            </b>
+        </p>
+
+        <div class="love">
+            I Love You ❤️
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+const yes =
+document.getElementById("yes");
+
+const no =
+document.getElementById("no");
+
+
+/*
+   YES BUTTON
+*/
+
+yes.addEventListener("click",function(){
+
+    document
+    .getElementById("question")
+    .classList
+    .add("hidden");
+
+    document
+    .getElementById("success")
+    .classList
+    .remove("hidden");
+
+    no.style.display="none";
+
+    for(let i=0;i<25;i++){
+
+        setTimeout(createHeart,i*70);
+
+    }
+
+});
+
+
+/*
+   NO BUTTON
+   PEHLI BAAR NORMAL POSITION MEIN HAI.
+
+   TOUCH / CLICK KARNE PAR
+   HI BHAAGEGA.
+*/
+
+function runAway(){
+
+    const w =
+    no.offsetWidth;
+
+    const h =
+    no.offsetHeight;
+
+    const padding = 15;
+
+    const maxX =
+    window.innerWidth-w-padding;
+
+    const maxY =
+    window.innerHeight-h-padding;
+
+    const x =
+    padding+
+    Math.random()*
+    Math.max(1,maxX-padding);
+
+    const y =
+    padding+
+    Math.random()*
+    Math.max(1,maxY-padding);
+
+    no.style.position="fixed";
+
+    no.style.left=x+"px";
+
+    no.style.top=y+"px";
+
+}
+
+
+/*
+   MOBILE TOUCH
+*/
+
+no.addEventListener(
+"touchstart",
+function(e){
+
+    e.preventDefault();
+
+    runAway();
+
+},
+{
+    passive:false
+}
+);
+
+
+/*
+   CLICK
+*/
+
+no.addEventListener(
+"click",
+function(e){
+
+    e.preventDefault();
+
+    runAway();
+
+}
+);
+
+
+/*
+   DESKTOP MOUSE
+*/
+
+no.addEventListener(
+"mouseenter",
+function(){
+
+    runAway();
+
+}
+);
+
+
+/*
+   FLOATING HEARTS
+*/
+
+function createHeart(){
+
+    const heart =
+    document.createElement("div");
+
+    heart.className="heart";
+
+    const list=[
+        "❤️",
+        "💗",
+        "💕",
+        "💖",
+        "💓"
+    ];
+
+    heart.innerHTML=
+    list[
+        Math.floor(
+            Math.random()*list.length
+        )
+    ];
+
+    heart.style.left=
+    Math.random()*100+"vw";
+
+    heart.style.fontSize=
+    (15+Math.random()*20)+"px";
+
+    document
+    .getElementById("hearts")
+    .appendChild(heart);
+
+    setTimeout(
+        ()=>heart.remove(),
+        7000
+    );
+
+}
+
+setInterval(createHeart,800);
+
+</script>
+
+</body>
+</html>
